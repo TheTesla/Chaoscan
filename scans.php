@@ -24,7 +24,7 @@
 		echo "<input type=hidden name=name value=".$name.">" ?>
         <input type=submit value=scan>
 </form>
-	<a href=index.php>back</a>
+	<a href=index.php>back</a> <?php echo " <a href=delcat.php?name=".$name.">delete all</a>"; ?> 
 <?php
 	include "showim.php";
 ?>

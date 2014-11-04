@@ -16,7 +16,7 @@
 				echo "<br>";
 			}
 			$col = $col + 1;
-        		echo "<figure><img src=image/".$name."/".$file." width=".$width." height=".$height." /><figcaption>".$name."/".$file."<a href=delim.php?name=".$name."&nbr=".$file.">delete</a></figcaption></figure>";
+        		echo "<figure><img src=image/".$name."/".$file." width=".$width." height=".$height." /><figcaption>".$name."/".$file."<br><a href=delim.php?name=".$name."&nbr=".$file.">delete</a></figcaption></figure>";
     		}
 	}
 

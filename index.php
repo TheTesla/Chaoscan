@@ -1,6 +1,7 @@
 <html><head></head>
 <body>
 <h1>Chaoscan</h1>
+<a href="delall.php">delete all</a><br><br>
 <?php
 	include "listnames.php";
 
