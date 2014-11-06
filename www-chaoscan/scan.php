@@ -11,6 +11,8 @@ $nbr	= (!empty($_GET["nbr"])) 	? $_GET["nbr"] 		: $n+1;
 $x	= (!empty($_GET["x"])) 		? $_GET["x"] 		: 210;
 $y	= (!empty($_GET["y"])) 		? $_GET["y"] 		: 297;
 $res 	= (!empty($_GET["resolution"])) ? $_GET["resolution"] 	:  90;
+$no	= (!empty($_GET["noscan"]))	? $_GET["noscan"]	:  0;
+
 $nlz = 4;
 
 $handle = opendir("image/".$name);
@@ -35,9 +37,10 @@ fwrite($file, $res);
 fclose($file);
 
 
-
-$file = fopen("command/scan", "w") or die("can't open scan file");
-fclose($file);
+if(0==$no){
+	$file = fopen("command/scan", "w") or die("can't open scan file");
+	fclose($file);
+}
 
 while(file_exists("command/scan")){
 	sleep(1);

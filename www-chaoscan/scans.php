@@ -24,6 +24,9 @@
 		echo "<input type=hidden name=name value=".$name.">" ?>
         <input type=submit value=scan>
 </form>
+<?php
+	echo "<a href=scan.php?name=".$name."&x=297&y=210&resolution=".$res."&noscan=1>A4</a><br></br>";
+?>
 	<a href=index.php>back</a> <?php echo " <a href=delcat.php?name=".$name.">delete all</a>"; ?> 
 <?php
 	include "showim.php";
