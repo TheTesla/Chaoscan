@@ -18,14 +18,14 @@
 ?>
 <form action=scan.php method=get>
        <?php 
-		echo "height/mm: <input type=text name=x value=".$x.">";
-        	echo "width/mm: <input type=text name=y value=".$y.">";
+		echo "height/mm: <input type=text name=y value=".$y.">";
+        	echo "width/mm: <input type=text name=x value=".$x.">";
         	echo "resolution/dpi: <input type=text name=resolution value=".$res.">";
 		echo "<input type=hidden name=name value=".$name.">" ?>
         <input type=submit value=scan>
 </form>
 <?php
-	echo "<a href=scan.php?name=".$name."&x=297&y=210&resolution=".$res."&noscan=1>A4</a><br></br>";
+	echo "<a href=scan.php?name=".$name."&y=297&x=210&resolution=".$res."&noscan=1>A4</a><br></br>";
 ?>
 	<a href=index.php>back</a> <?php echo " <a href=delcat.php?name=".$name.">delete all</a>"; ?> 
 <?php
